@@ -1,5 +1,6 @@
 server:
-  port: 7070
+  port: 8888   # ⚙️ Puerto estándar del Config Server
+
 spring:
   application:
     name: ms-config-server
@@ -7,10 +8,10 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/VederQC/DAD-2025-2-main # ruta del repositorio git
-          searchPaths: config-data
-          default-label: main
+          uri: https://github.com/fabrizzio122/DISTRI.git  # Repositorio central
+          searchPaths: config-data                         # Carpeta donde estarán los YML de cada microservicio
+          default-label: main                              # Rama principal
   security:
     user:
-      name: root
+      name: root                                           # Usuario de acceso al Config Server
       password: 123456
