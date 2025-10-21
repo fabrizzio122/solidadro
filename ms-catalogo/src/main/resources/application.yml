@@ -1,9 +1,0 @@
-server:
-  port: 8084
-spring:
-  application:
-    name: ms-catalogo
-  profiles:
-    active: development
-  config:
-    import: optional:configserver:http://root:123456@localhost:7070
